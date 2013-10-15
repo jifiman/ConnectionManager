@@ -3,7 +3,7 @@ iface lo inet loopback
 
 auto wlan0
 iface wlan0 inet dhcp
-	wpa-ssid Ajax
-        wpa-psk error
+	wpa-ssid homeWifi
+        wpa-psk asdfASDF123
 mapping wlan0
 	script /root/configureWlan0

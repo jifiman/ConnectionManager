@@ -44,7 +44,7 @@ all: ConnectionManager
 ConnectionManager: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	arm-linux-gnueabihf-g++ -nostdinc -nostdlib -L/media/rca/myPart1/Beagle/Kernel/Debian/myLibs -L/mnt/beagle/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/mnt/beagle/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/mnt/beagle/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/mnt/beagle/lib/arm-linux-gnueabihf -L/mnt/beagle/lib -L/mnt/beagle/usr/lib/arm-linux-gnueabihf -L /media/rca/myPart1/Beagle/Kernel/Debian/myLibs/    --sysroot=/mnt/beagle -o "ConnectionManager" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "ConnectionManager" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

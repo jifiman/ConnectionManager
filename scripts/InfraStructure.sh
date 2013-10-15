@@ -7,6 +7,7 @@ Error()
 {	
 	logger FAILED:$1 	
 	echo FAILED:$1
+	echo Returned:$2
 	exit $2	
 }
 Execute()
